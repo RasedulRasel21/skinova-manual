@@ -1,0 +1,4 @@
+{
+  "comment": "Section handles documented in words only. Their pages render no screenshot slots, and npm run screenshots stops reporting them as missing. Template-only sections are excluded automatically and don't need listing here.",
+  "sections": ["collections"]
+}
