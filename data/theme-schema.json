@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-15T19:00:16.117Z",
+  "generatedAt": "2026-11-23T17:59:39.649Z",
   "theme": {
     "name": "Oblique",
     "version": "1.0.0",
     "author": "Themestudio",
-    "documentationUrl": "https://skinova-manual.vercel.app",
+    "documentationUrl": "https://oblique-manual.vercel.app",
     "supportUrl": "https://themestudio.store/pages/contact"
   },
   "totals": {
-    "sections": 46,
-    "addableSections": 30,
+    "sections": 43,
+    "addableSections": 27,
     "templateSections": 16,
     "themeSettings": 32,
-    "sectionSettings": 358,
-    "blockSettings": 145
+    "sectionSettings": 346,
+    "blockSettings": 151
   },
   "themeSettings": [
     {
@@ -438,6 +438,20 @@
               "untranslated": true
             }
           ]
+        },
+        {
+          "title": "Drops",
+          "settings": [
+            {
+              "id": "drop_metafield",
+              "type": "text",
+              "label": "Drop date metafield",
+              "info": "Optional. The product metafield that holds a drop date, written as namespace.key (for example custom.drop_date). Products with a future date show a countdown and can't be bought until then. Use a date or date and time metafield.",
+              "default": null,
+              "unit": null,
+              "untranslated": true
+            }
+          ]
         }
       ]
     },
@@ -466,25 +480,6 @@
                 }
               ],
               "untranslated": false
-            },
-            {
-              "id": "cart_add_feedback",
-              "type": "select",
-              "label": "After adding to cart",
-              "info": "Applies when the cart type is Drawer.",
-              "default": "drawer",
-              "unit": null,
-              "options": [
-                {
-                  "value": "drawer",
-                  "label": "Open the cart drawer"
-                },
-                {
-                  "value": "fly",
-                  "label": "Fly the photo to the bag"
-                }
-              ],
-              "untranslated": true
             },
             {
               "id": "show_cart_note",
@@ -808,169 +803,9 @@
       "blocks": []
     },
     {
-      "handle": "category-columns",
-      "slug": "category-columns",
-      "title": "Category columns",
-      "addable": true,
-      "maxBlocks": 4,
-      "acceptsAppBlocks": false,
-      "usedIn": [
-        "index"
-      ],
-      "renderedInLayout": false,
-      "settingCount": 4,
-      "blockSettingCount": 6,
-      "groups": [
-        {
-          "title": null,
-          "settings": [
-            {
-              "id": "aria_label",
-              "type": "text",
-              "label": "Accessible name",
-              "info": "Read by screen readers. Not shown on the page.",
-              "default": "Shop by category",
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "color_scheme",
-              "type": "color_scheme",
-              "label": "Divider color",
-              "info": "Shows as the thin line between columns.",
-              "default": "scheme-2",
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "padding_top",
-              "type": "select",
-              "label": "Top padding",
-              "info": null,
-              "default": "small",
-              "unit": null,
-              "options": [
-                {
-                  "value": "none",
-                  "label": "None"
-                },
-                {
-                  "value": "small",
-                  "label": "Small"
-                },
-                {
-                  "value": "medium",
-                  "label": "Medium"
-                },
-                {
-                  "value": "large",
-                  "label": "Large"
-                }
-              ],
-              "untranslated": true
-            },
-            {
-              "id": "padding_bottom",
-              "type": "select",
-              "label": "Bottom padding",
-              "info": null,
-              "default": "none",
-              "unit": null,
-              "options": [
-                {
-                  "value": "none",
-                  "label": "None"
-                },
-                {
-                  "value": "small",
-                  "label": "Small"
-                },
-                {
-                  "value": "medium",
-                  "label": "Medium"
-                },
-                {
-                  "value": "large",
-                  "label": "Large"
-                }
-              ],
-              "untranslated": true
-            }
-          ]
-        }
-      ],
-      "blocks": [
-        {
-          "type": "column",
-          "name": "Column",
-          "groups": [
-            {
-              "title": null,
-              "settings": [
-                {
-                  "id": "collection",
-                  "type": "collection",
-                  "label": "Collection",
-                  "info": "Fills the title, image and link when those are empty.",
-                  "default": null,
-                  "unit": null,
-                  "untranslated": true
-                },
-                {
-                  "id": "title",
-                  "type": "text",
-                  "label": "Title",
-                  "info": null,
-                  "default": null,
-                  "unit": null,
-                  "untranslated": true
-                },
-                {
-                  "id": "image",
-                  "type": "image_picker",
-                  "label": "Image",
-                  "info": "Tall portrait images work best.",
-                  "default": null,
-                  "unit": null,
-                  "untranslated": true
-                },
-                {
-                  "id": "video",
-                  "type": "video",
-                  "label": "Video",
-                  "info": "Plays muted on a loop instead of the image.",
-                  "default": null,
-                  "unit": null,
-                  "untranslated": true
-                },
-                {
-                  "id": "button_label",
-                  "type": "text",
-                  "label": "Button label",
-                  "info": null,
-                  "default": "Shop now",
-                  "unit": null,
-                  "untranslated": true
-                },
-                {
-                  "id": "link",
-                  "type": "url",
-                  "label": "Link",
-                  "info": null,
-                  "default": null,
-                  "unit": null,
-                  "untranslated": true
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "handle": "collection-index",
-      "slug": "collection-index",
-      "title": "Collection index",
+      "handle": "collection-list",
+      "slug": "collection-list",
+      "title": "Collection list",
       "addable": true,
       "maxBlocks": 8,
       "acceptsAppBlocks": false,
@@ -978,17 +813,36 @@
         "index"
       ],
       "renderedInLayout": false,
-      "settingCount": 5,
-      "blockSettingCount": 4,
+      "settingCount": 6,
+      "blockSettingCount": 7,
       "groups": [
         {
           "title": null,
           "settings": [
             {
+              "id": "layout",
+              "type": "select",
+              "label": "Layout",
+              "info": "Columns shows tall photo tiles, up to 4 in a row. Index shows numbered rows that open a photo on hover.",
+              "default": "index",
+              "unit": null,
+              "options": [
+                {
+                  "value": "columns",
+                  "label": "Columns"
+                },
+                {
+                  "value": "index",
+                  "label": "Index"
+                }
+              ],
+              "untranslated": true
+            },
+            {
               "id": "heading",
               "type": "inline_richtext",
               "label": "Heading",
-              "info": "Italic words use the accent font.",
+              "info": "In the Columns layout the heading is read by screen readers only.",
               "default": "Collection <em>index</em>",
               "unit": null,
               "untranslated": true
@@ -997,7 +851,7 @@
               "id": "text",
               "type": "text",
               "label": "Text",
-              "info": null,
+              "info": "Index layout only.",
               "default": "Hover a row. Each collection opens like a contact sheet.",
               "unit": null,
               "untranslated": true
@@ -1006,7 +860,7 @@
               "id": "color_scheme",
               "type": "color_scheme",
               "label": "Color scheme",
-              "info": null,
+              "info": "In the Columns layout this colors the thin line between columns.",
               "default": "scheme-1",
               "unit": null,
               "untranslated": true
@@ -1080,7 +934,7 @@
                   "id": "collection",
                   "type": "collection",
                   "label": "Collection",
-                  "info": null,
+                  "info": "Fills the title, image and link when those are empty.",
                   "default": null,
                   "unit": null,
                   "untranslated": true
@@ -1089,7 +943,25 @@
                   "id": "title",
                   "type": "text",
                   "label": "Title",
-                  "info": "Uses the collection title when empty.",
+                  "info": null,
+                  "default": null,
+                  "unit": null,
+                  "untranslated": true
+                },
+                {
+                  "id": "image",
+                  "type": "image_picker",
+                  "label": "Image",
+                  "info": "Columns: tall portrait images work best. Index: shown on hover.",
+                  "default": null,
+                  "unit": null,
+                  "untranslated": true
+                },
+                {
+                  "id": "video",
+                  "type": "video",
+                  "label": "Video",
+                  "info": "Columns layout only. Plays muted on a loop instead of the image.",
                   "default": null,
                   "unit": null,
                   "untranslated": true
@@ -1098,16 +970,25 @@
                   "id": "description",
                   "type": "text",
                   "label": "Short description",
-                  "info": null,
-                  "default": "Three or four words",
+                  "info": "Index layout only.",
+                  "default": null,
                   "unit": null,
                   "untranslated": true
                 },
                 {
-                  "id": "image",
-                  "type": "image_picker",
-                  "label": "Hover image",
-                  "info": "Uses the collection image when empty.",
+                  "id": "button_label",
+                  "type": "text",
+                  "label": "Button label",
+                  "info": "Columns layout only.",
+                  "default": null,
+                  "unit": null,
+                  "untranslated": true
+                },
+                {
+                  "id": "link",
+                  "type": "url",
+                  "label": "Link",
+                  "info": "Uses the collection link when empty.",
                   "default": null,
                   "unit": null,
                   "untranslated": true
@@ -1267,17 +1148,36 @@
       "acceptsAppBlocks": false,
       "usedIn": [],
       "renderedInLayout": false,
-      "settingCount": 7,
+      "settingCount": 8,
       "blockSettingCount": 3,
       "groups": [
         {
           "title": null,
           "settings": [
             {
+              "id": "layout",
+              "type": "select",
+              "label": "Layout",
+              "info": "Layered pieces stacks each product's photo; unticked pieces slide out of the stack.",
+              "default": "photo",
+              "unit": null,
+              "options": [
+                {
+                  "value": "photo",
+                  "label": "Campaign photo with callouts"
+                },
+                {
+                  "value": "layers",
+                  "label": "Layered pieces"
+                }
+              ],
+              "untranslated": true
+            },
+            {
               "id": "image",
               "type": "image_picker",
               "label": "Campaign photo",
-              "info": null,
+              "info": "For the campaign photo layout.",
               "default": null,
               "unit": null,
               "untranslated": true
@@ -1621,14 +1521,14 @@
       "slug": "contact-hero",
       "title": "Contact hero",
       "addable": true,
-      "maxBlocks": null,
+      "maxBlocks": 3,
       "acceptsAppBlocks": false,
       "usedIn": [
         "page.contact"
       ],
       "renderedInLayout": false,
       "settingCount": 8,
-      "blockSettingCount": 0,
+      "blockSettingCount": 6,
       "groups": [
         {
           "title": null,
@@ -1675,100 +1575,6 @@
               "label": "Status label on image",
               "info": null,
               "default": "Customer care is online",
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "color_scheme",
-              "type": "color_scheme",
-              "label": "Color scheme",
-              "info": null,
-              "default": "scheme-1",
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "padding_top",
-              "type": "select",
-              "label": "Top padding",
-              "info": null,
-              "default": "small",
-              "unit": null,
-              "options": [
-                {
-                  "value": "none",
-                  "label": "None"
-                },
-                {
-                  "value": "small",
-                  "label": "Small"
-                },
-                {
-                  "value": "medium",
-                  "label": "Medium"
-                },
-                {
-                  "value": "large",
-                  "label": "Large"
-                }
-              ],
-              "untranslated": true
-            },
-            {
-              "id": "padding_bottom",
-              "type": "select",
-              "label": "Bottom padding",
-              "info": null,
-              "default": "small",
-              "unit": null,
-              "options": [
-                {
-                  "value": "none",
-                  "label": "None"
-                },
-                {
-                  "value": "small",
-                  "label": "Small"
-                },
-                {
-                  "value": "medium",
-                  "label": "Medium"
-                },
-                {
-                  "value": "large",
-                  "label": "Large"
-                }
-              ],
-              "untranslated": true
-            }
-          ]
-        }
-      ],
-      "blocks": []
-    },
-    {
-      "handle": "contact-ways",
-      "slug": "contact-ways",
-      "title": "Contact methods",
-      "addable": true,
-      "maxBlocks": null,
-      "acceptsAppBlocks": false,
-      "usedIn": [
-        "page.contact"
-      ],
-      "renderedInLayout": false,
-      "settingCount": 4,
-      "blockSettingCount": 6,
-      "groups": [
-        {
-          "title": null,
-          "settings": [
-            {
-              "id": "heading",
-              "type": "text",
-              "label": "Accessible name",
-              "info": "Read by screen readers; not shown.",
-              "default": "Ways to reach us",
               "unit": null,
               "untranslated": true
             },
@@ -2666,7 +2472,7 @@
     {
       "handle": "feature-index",
       "slug": "feature-index",
-      "title": "Feature index",
+      "title": "Index list",
       "addable": true,
       "maxBlocks": null,
       "acceptsAppBlocks": false,
@@ -3253,7 +3059,7 @@
         "index"
       ],
       "renderedInLayout": false,
-      "settingCount": 7,
+      "settingCount": 8,
       "blockSettingCount": 0,
       "groups": [
         {
@@ -3298,6 +3104,25 @@
               "info": null,
               "default": "All stories",
               "unit": null,
+              "untranslated": true
+            },
+            {
+              "id": "layout",
+              "type": "select",
+              "label": "Layout",
+              "info": "Contents list numbers each story like an issue's contents page and shows its photo beside the pointer.",
+              "default": "contents",
+              "unit": null,
+              "options": [
+                {
+                  "value": "contents",
+                  "label": "Contents list"
+                },
+                {
+                  "value": "rail",
+                  "label": "Card rail"
+                }
+              ],
               "untranslated": true
             },
             {
@@ -3435,7 +3260,7 @@
               "type": "text",
               "label": "Second button label",
               "info": null,
-              "default": "View lookbook",
+              "default": "Shop the look",
               "unit": null,
               "untranslated": true
             },
@@ -3636,167 +3461,6 @@
                   "info": null,
                   "default": "Product name",
                   "unit": null,
-                  "untranslated": true
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "handle": "lookbook",
-      "slug": "lookbook",
-      "title": "Lookbook",
-      "addable": true,
-      "maxBlocks": 6,
-      "acceptsAppBlocks": false,
-      "usedIn": [
-        "index"
-      ],
-      "renderedInLayout": false,
-      "settingCount": 6,
-      "blockSettingCount": 3,
-      "groups": [
-        {
-          "title": null,
-          "settings": [
-            {
-              "id": "heading",
-              "type": "inline_richtext",
-              "label": "Heading",
-              "info": "Italic words use the accent font.",
-              "default": "Shop the <em>look</em>",
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "text",
-              "type": "text",
-              "label": "Text",
-              "info": null,
-              "default": "Look 04",
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "image",
-              "type": "image_picker",
-              "label": "Image",
-              "info": "Landscape 5:4 images work best. Place each hotspot on the product it shows.",
-              "default": null,
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "color_scheme",
-              "type": "color_scheme",
-              "label": "Color scheme",
-              "info": null,
-              "default": "scheme-1",
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "padding_top",
-              "type": "select",
-              "label": "Top padding",
-              "info": null,
-              "default": "none",
-              "unit": null,
-              "options": [
-                {
-                  "value": "none",
-                  "label": "None"
-                },
-                {
-                  "value": "small",
-                  "label": "Small"
-                },
-                {
-                  "value": "medium",
-                  "label": "Medium"
-                },
-                {
-                  "value": "large",
-                  "label": "Large"
-                }
-              ],
-              "untranslated": true
-            },
-            {
-              "id": "padding_bottom",
-              "type": "select",
-              "label": "Bottom padding",
-              "info": null,
-              "default": "large",
-              "unit": null,
-              "options": [
-                {
-                  "value": "none",
-                  "label": "None"
-                },
-                {
-                  "value": "small",
-                  "label": "Small"
-                },
-                {
-                  "value": "medium",
-                  "label": "Medium"
-                },
-                {
-                  "value": "large",
-                  "label": "Large"
-                }
-              ],
-              "untranslated": true
-            }
-          ]
-        }
-      ],
-      "blocks": [
-        {
-          "type": "hotspot",
-          "name": "Hotspot",
-          "groups": [
-            {
-              "title": null,
-              "settings": [
-                {
-                  "id": "product",
-                  "type": "product",
-                  "label": "Product",
-                  "info": null,
-                  "default": null,
-                  "unit": null,
-                  "untranslated": true
-                },
-                {
-                  "id": "x",
-                  "type": "range",
-                  "label": "Horizontal position",
-                  "info": null,
-                  "default": 40,
-                  "unit": "%",
-                  "range": {
-                    "min": 0,
-                    "max": 100,
-                    "step": 1
-                  },
-                  "untranslated": true
-                },
-                {
-                  "id": "y",
-                  "type": "range",
-                  "label": "Vertical position",
-                  "info": null,
-                  "default": 40,
-                  "unit": "%",
-                  "range": {
-                    "min": 0,
-                    "max": 100,
-                    "step": 1
-                  },
                   "untranslated": true
                 }
               ]
@@ -5111,7 +4775,7 @@
       ],
       "renderedInLayout": false,
       "settingCount": 9,
-      "blockSettingCount": 27,
+      "blockSettingCount": 38,
       "groups": [
         {
           "title": null,
@@ -5484,7 +5148,7 @@
                   "id": "fit_scale",
                   "type": "range",
                   "label": "Fit",
-                  "info": "1 runs small, 3 true to size, 5 runs large.",
+                  "info": "1 runs small, 3 true to size, 5 runs large. Used when Fit per product is empty.",
                   "default": 3,
                   "unit": null,
                   "range": {
@@ -5492,6 +5156,15 @@
                     "max": 5,
                     "step": 1
                   },
+                  "untranslated": true
+                },
+                {
+                  "id": "fit_value",
+                  "type": "text",
+                  "label": "Fit per product",
+                  "info": "A number from 1 to 5. Connect it to a number metafield so each product has its own fit.",
+                  "default": null,
+                  "unit": null,
                   "untranslated": true
                 },
                 {
@@ -5527,6 +5200,139 @@
                   "label": "Size chart (height in cm)",
                   "info": "One size per line as Size: shortest-tallest. Size names must match the product's size option.",
                   "default": "XS: 150-160\nS: 158-168\nM: 166-176\nL: 174-184\nXL: 182-194",
+                  "unit": null,
+                  "untranslated": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "models",
+          "name": "Model switcher",
+          "groups": [
+            {
+              "title": null,
+              "settings": [
+                {
+                  "id": "models",
+                  "type": "richtext",
+                  "label": "Models",
+                  "info": "One model per line or paragraph as Name | height | size worn | photo number, for example: Ana | 178 cm | S | 3. The photo number counts the product's media from 1. Needs at least two models to show.",
+                  "default": null,
+                  "unit": null,
+                  "untranslated": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "material",
+          "name": "Material lens",
+          "groups": [
+            {
+              "title": null,
+              "settings": [
+                {
+                  "id": "heading",
+                  "type": "text",
+                  "label": "Heading",
+                  "info": null,
+                  "default": "Material",
+                  "unit": null,
+                  "untranslated": true
+                },
+                {
+                  "id": "image",
+                  "type": "image_picker",
+                  "label": "Fabric close-up",
+                  "info": "A sharp, close photo of the cloth. Visitors move a magnifier over it.",
+                  "default": null,
+                  "unit": null,
+                  "untranslated": true
+                },
+                {
+                  "id": "composition",
+                  "type": "richtext",
+                  "label": "Composition",
+                  "info": "One fibre per line or paragraph, for example: 72% Wool",
+                  "default": null,
+                  "unit": null,
+                  "untranslated": true
+                },
+                {
+                  "id": "origin",
+                  "type": "text",
+                  "label": "Origin note",
+                  "info": "For example: Woven in Biella, Italy",
+                  "default": null,
+                  "unit": null,
+                  "untranslated": true
+                },
+                {
+                  "id": "care",
+                  "type": "text",
+                  "label": "Care symbols",
+                  "info": "Codes separated by commas: wash-30, wash-hand, no-bleach, no-tumble, iron-low, dry-flat, dry-clean, no-dry-clean. Connect to a single-line text metafield so each product has its own.",
+                  "default": null,
+                  "unit": null,
+                  "untranslated": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "cost_per_wear",
+          "name": "Cost per wear",
+          "groups": [
+            {
+              "title": null,
+              "settings": [
+                {
+                  "id": "heading",
+                  "type": "text",
+                  "label": "Heading",
+                  "info": null,
+                  "default": "Cost per wear",
+                  "unit": null,
+                  "untranslated": true
+                },
+                {
+                  "id": "wears",
+                  "type": "range",
+                  "label": "Starting wears a month",
+                  "info": null,
+                  "default": 4,
+                  "unit": null,
+                  "range": {
+                    "min": 1,
+                    "max": 30,
+                    "step": 1
+                  },
+                  "untranslated": true
+                },
+                {
+                  "id": "years",
+                  "type": "range",
+                  "label": "Starting years kept",
+                  "info": null,
+                  "default": 3,
+                  "unit": null,
+                  "range": {
+                    "min": 1,
+                    "max": 10,
+                    "step": 1
+                  },
+                  "untranslated": true
+                },
+                {
+                  "id": "note",
+                  "type": "text",
+                  "label": "Note",
+                  "info": "Optional. For example: Repairs are free for the first two years.",
+                  "default": null,
                   "unit": null,
                   "untranslated": true
                 }
@@ -5829,7 +5635,8 @@
       "maxBlocks": 12,
       "acceptsAppBlocks": false,
       "usedIn": [
-        "index"
+        "index",
+        "page.about"
       ],
       "renderedInLayout": false,
       "settingCount": 3,
@@ -5939,6 +5746,198 @@
                   "info": "Shown as a small pill inside the sentence.",
                   "default": null,
                   "unit": null,
+                  "untranslated": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "model-spotlight",
+      "slug": "model-spotlight",
+      "title": "Model spotlight",
+      "addable": true,
+      "maxBlocks": 4,
+      "acceptsAppBlocks": false,
+      "usedIn": [
+        "index"
+      ],
+      "renderedInLayout": false,
+      "settingCount": 7,
+      "blockSettingCount": 6,
+      "groups": [
+        {
+          "title": null,
+          "settings": [
+            {
+              "id": "label",
+              "type": "text",
+              "label": "Label",
+              "info": null,
+              "default": "One piece, three bodies",
+              "unit": null,
+              "untranslated": true
+            },
+            {
+              "id": "heading",
+              "type": "inline_richtext",
+              "label": "Heading",
+              "info": null,
+              "default": "See it <em>on you</em>",
+              "unit": null,
+              "untranslated": true
+            },
+            {
+              "id": "text",
+              "type": "richtext",
+              "label": "Text",
+              "info": null,
+              "default": "<p>The same coat on models of different heights, each in the size they chose.</p>",
+              "unit": null,
+              "untranslated": true
+            },
+            {
+              "id": "product",
+              "type": "product",
+              "label": "Product",
+              "info": null,
+              "default": null,
+              "unit": null,
+              "untranslated": true
+            },
+            {
+              "id": "color_scheme",
+              "type": "color_scheme",
+              "label": "Color scheme",
+              "info": null,
+              "default": "scheme-1",
+              "unit": null,
+              "untranslated": true
+            },
+            {
+              "id": "padding_top",
+              "type": "select",
+              "label": "Top padding",
+              "info": null,
+              "default": "large",
+              "unit": null,
+              "options": [
+                {
+                  "value": "none",
+                  "label": "None"
+                },
+                {
+                  "value": "small",
+                  "label": "Small"
+                },
+                {
+                  "value": "medium",
+                  "label": "Medium"
+                },
+                {
+                  "value": "large",
+                  "label": "Large"
+                }
+              ],
+              "untranslated": true
+            },
+            {
+              "id": "padding_bottom",
+              "type": "select",
+              "label": "Bottom padding",
+              "info": null,
+              "default": "large",
+              "unit": null,
+              "options": [
+                {
+                  "value": "none",
+                  "label": "None"
+                },
+                {
+                  "value": "small",
+                  "label": "Small"
+                },
+                {
+                  "value": "medium",
+                  "label": "Medium"
+                },
+                {
+                  "value": "large",
+                  "label": "Large"
+                }
+              ],
+              "untranslated": true
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "model",
+          "name": "Model",
+          "groups": [
+            {
+              "title": null,
+              "settings": [
+                {
+                  "id": "name",
+                  "type": "text",
+                  "label": "Name",
+                  "info": null,
+                  "default": "Lena",
+                  "unit": null,
+                  "untranslated": true
+                },
+                {
+                  "id": "height",
+                  "type": "text",
+                  "label": "Height",
+                  "info": null,
+                  "default": "178 cm",
+                  "unit": null,
+                  "untranslated": true
+                },
+                {
+                  "id": "size",
+                  "type": "text",
+                  "label": "Size worn",
+                  "info": null,
+                  "default": "S",
+                  "unit": null,
+                  "untranslated": true
+                },
+                {
+                  "id": "note",
+                  "type": "text",
+                  "label": "Fit note",
+                  "info": "Optional. For example: Hits mid-calf.",
+                  "default": null,
+                  "unit": null,
+                  "untranslated": true
+                },
+                {
+                  "id": "image",
+                  "type": "image_picker",
+                  "label": "Photo",
+                  "info": "Leave empty to use one of the product's photos.",
+                  "default": null,
+                  "unit": null,
+                  "untranslated": true
+                },
+                {
+                  "id": "photo",
+                  "type": "range",
+                  "label": "Product photo number",
+                  "info": null,
+                  "default": 1,
+                  "unit": null,
+                  "range": {
+                    "min": 1,
+                    "max": 10,
+                    "step": 1
+                  },
                   "untranslated": true
                 }
               ]
@@ -6169,7 +6168,8 @@
       "maxBlocks": null,
       "acceptsAppBlocks": false,
       "usedIn": [
-        "page"
+        "page",
+        "page.about"
       ],
       "renderedInLayout": false,
       "settingCount": 8,
@@ -6444,220 +6444,6 @@
         }
       ],
       "blocks": []
-    },
-    {
-      "handle": "press",
-      "slug": "press",
-      "title": "Press",
-      "addable": true,
-      "maxBlocks": null,
-      "acceptsAppBlocks": false,
-      "usedIn": [
-        "index"
-      ],
-      "renderedInLayout": false,
-      "settingCount": 8,
-      "blockSettingCount": 5,
-      "groups": [
-        {
-          "title": null,
-          "settings": [
-            {
-              "id": "eyebrow",
-              "type": "text",
-              "label": "Eyebrow",
-              "info": null,
-              "default": "As written about in",
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "autoplay",
-              "type": "checkbox",
-              "label": "Change quotes automatically",
-              "info": "Stops when a shopper picks a publication, and never runs for visitors who prefer reduced motion.",
-              "default": true,
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "interval",
-              "type": "range",
-              "label": "Seconds per quote",
-              "info": null,
-              "default": 6,
-              "unit": "s",
-              "range": {
-                "min": 4,
-                "max": 12,
-                "step": 1
-              },
-              "untranslated": true
-            },
-            {
-              "id": "tabs_label",
-              "type": "text",
-              "label": "Publications label for screen readers",
-              "info": null,
-              "default": "Publications",
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "read_label",
-              "type": "text",
-              "label": "Article link label",
-              "info": null,
-              "default": "Read the article",
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "color_scheme",
-              "type": "color_scheme",
-              "label": "Color scheme",
-              "info": null,
-              "default": "scheme-1",
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "padding_top",
-              "type": "select",
-              "label": "Top padding",
-              "info": null,
-              "default": "large",
-              "unit": null,
-              "options": [
-                {
-                  "value": "none",
-                  "label": "None"
-                },
-                {
-                  "value": "small",
-                  "label": "Small"
-                },
-                {
-                  "value": "medium",
-                  "label": "Medium"
-                },
-                {
-                  "value": "large",
-                  "label": "Large"
-                }
-              ],
-              "untranslated": true
-            },
-            {
-              "id": "padding_bottom",
-              "type": "select",
-              "label": "Bottom padding",
-              "info": null,
-              "default": "large",
-              "unit": null,
-              "options": [
-                {
-                  "value": "none",
-                  "label": "None"
-                },
-                {
-                  "value": "small",
-                  "label": "Small"
-                },
-                {
-                  "value": "medium",
-                  "label": "Medium"
-                },
-                {
-                  "value": "large",
-                  "label": "Large"
-                }
-              ],
-              "untranslated": true
-            }
-          ]
-        }
-      ],
-      "blocks": [
-        {
-          "type": "publication",
-          "name": "Publication",
-          "groups": [
-            {
-              "title": null,
-              "settings": [
-                {
-                  "id": "name",
-                  "type": "text",
-                  "label": "Publication name",
-                  "info": null,
-                  "default": "Publication",
-                  "unit": null,
-                  "untranslated": true
-                },
-                {
-                  "id": "logo",
-                  "type": "image_picker",
-                  "label": "Logo",
-                  "info": "Optional. Without a logo, the name is set as a wordmark.",
-                  "default": null,
-                  "unit": null,
-                  "untranslated": true
-                },
-                {
-                  "id": "style",
-                  "type": "select",
-                  "label": "Wordmark style",
-                  "info": null,
-                  "default": "heavy",
-                  "unit": null,
-                  "options": [
-                    {
-                      "value": "heavy",
-                      "label": "Heavy"
-                    },
-                    {
-                      "value": "serif",
-                      "label": "Serif italic"
-                    },
-                    {
-                      "value": "mono",
-                      "label": "Mono"
-                    },
-                    {
-                      "value": "light",
-                      "label": "Light spaced"
-                    },
-                    {
-                      "value": "classic",
-                      "label": "Classic serif"
-                    }
-                  ],
-                  "untranslated": true
-                },
-                {
-                  "id": "quote",
-                  "type": "textarea",
-                  "label": "Quote",
-                  "info": null,
-                  "default": "“A wardrobe built to be worn hard and kept for years.”",
-                  "unit": null,
-                  "untranslated": true
-                },
-                {
-                  "id": "link",
-                  "type": "url",
-                  "label": "Article link",
-                  "info": null,
-                  "default": null,
-                  "unit": null,
-                  "untranslated": true
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "handle": "product-details",
@@ -7007,7 +6793,8 @@
       "maxBlocks": null,
       "acceptsAppBlocks": false,
       "usedIn": [
-        "blog"
+        "blog",
+        "page.about"
       ],
       "renderedInLayout": false,
       "settingCount": 7,
@@ -7451,7 +7238,9 @@
       "addable": true,
       "maxBlocks": null,
       "acceptsAppBlocks": false,
-      "usedIn": [],
+      "usedIn": [
+        "index"
+      ],
       "renderedInLayout": false,
       "settingCount": 5,
       "blockSettingCount": 10,
@@ -7679,9 +7468,7 @@
       "addable": true,
       "maxBlocks": 12,
       "acceptsAppBlocks": false,
-      "usedIn": [
-        "index"
-      ],
+      "usedIn": [],
       "renderedInLayout": false,
       "settingCount": 8,
       "blockSettingCount": 2,
@@ -7864,9 +7651,7 @@
       "addable": true,
       "maxBlocks": 5,
       "acceptsAppBlocks": false,
-      "usedIn": [
-        "index"
-      ],
+      "usedIn": [],
       "renderedInLayout": false,
       "settingCount": 4,
       "blockSettingCount": 8,
@@ -8221,6 +8006,7 @@
       "maxBlocks": null,
       "acceptsAppBlocks": false,
       "usedIn": [
+        "page.about",
         "product"
       ],
       "renderedInLayout": false,

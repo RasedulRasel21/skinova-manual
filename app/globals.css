@@ -1,20 +1,21 @@
 @import "tailwindcss";
 
 /*
- * Palette mirrors the theme's own design tokens (snippets/css-variables.liquid)
- * so the manual reads as part of Skinova rather than a generic docs site.
+ * Palette and type mirror Oblique's default colour scheme (config/settings_data.json,
+ * "Oblique" preset): paper #F2F1EC, ink #0E0E0E, cobalt #2B2BFF, sand #DAD6CC;
+ * Archivo for text, Instrument Serif italic as the accent, IBM Plex Mono for labels.
  */
 :root {
-  --background: #ffffff;
-  --foreground: #1a1a1a;
-  --muted: #6b6b6b;
-  --muted-strong: #4a4a4a;
-  --line: #e8e4e2;
-  --cream: #fbe9e8;
-  --cream-soft: #fdf5f4;
-  --rose: #e8a5a0;
-  --accent: #111111;
-  --code-bg: #f5f2f1;
+  --background: #f2f1ec;
+  --foreground: #0e0e0e;
+  --muted: #5f5d58;
+  --muted-strong: #3a3935;
+  --line: #d9d6ce;
+  --paper: #ffffff;
+  --tint: #e8e6df;
+  --sand: #dad6cc;
+  --accent: #2b2bff;
+  --chip: #e6e3da;
 }
 
 @theme inline {
@@ -23,13 +24,14 @@
   --color-muted: var(--muted);
   --color-muted-strong: var(--muted-strong);
   --color-line: var(--line);
-  --color-cream: var(--cream);
-  --color-cream-soft: var(--cream-soft);
-  --color-rose: var(--rose);
+  --color-paper: var(--paper);
+  --color-tint: var(--tint);
+  --color-sand: var(--sand);
   --color-accent: var(--accent);
-  --color-code-bg: var(--code-bg);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-chip: var(--chip);
+  --font-sans: var(--font-archivo);
+  --font-serif: var(--font-instrument);
+  --font-mono: var(--font-plex-mono);
 }
 
 body {
@@ -37,9 +39,29 @@ body {
   color: var(--foreground);
 }
 
+/* Uppercase mono label, the theme's .k-label. */
+.label {
+  font-family: var(--font-plex-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* The serif italic word in a heading, the theme's .k-accent. */
+.accent {
+  font-family: var(--font-instrument);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
 /* Keyboard focus must stay visible everywhere — WCAG 2.2 AA. */
 :focus-visible {
-  outline: 2px solid var(--rose);
+  outline: 2px solid var(--accent);
   outline-offset: 2px;
   border-radius: 3px;
 }

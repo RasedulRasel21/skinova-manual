@@ -1,5 +1,5 @@
 /**
- * Extracts the Skinova theme's settings schema into data/theme-schema.json.
+ * Extracts the Oblique theme's settings schema into data/theme-schema.json.
  *
  * The manual has to stay "consistent with the copy in the theme settings"
  * (Shopify Theme Store requirement), so every setting name, default and help

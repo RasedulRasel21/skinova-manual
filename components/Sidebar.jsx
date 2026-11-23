@@ -78,9 +78,9 @@ export default function Sidebar() {
     <nav aria-label="Manual" className="text-foreground">
       <Link
         href="/updates"
-        className="mb-6 flex items-center gap-2 rounded-lg border border-line px-4 py-3 text-sm font-medium transition-colors hover:bg-cream-soft"
+        className="mb-6 flex items-center gap-2 rounded-lg border border-line px-4 py-3 text-sm font-medium transition-colors hover:bg-tint"
       >
-        <span className="rounded bg-rose px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-white">
+        <span className="rounded bg-accent px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-white">
           New
         </span>
         Latest updates

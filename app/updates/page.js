@@ -15,20 +15,29 @@ const releases = [
   {
     version: "1.0.0",
     date: "Unreleased",
-    summary: "First release.",
-    changes: ["Initial version of the theme."],
+    summary: "First release of Oblique, a kinetic editorial theme for fashion stores.",
+    changes: [
+      "Three presets: Oblique, Club and Hush.",
+      "Colour schemes, four type roles (heading, body, accent serif, mono label) and three motion presets: Kinetic, Editorial and Still.",
+      "27 sections you can add anywhere, including Kinetic hero, Runway, Model spotlight, Complete the look, Feature explorer and Scrolling tapes.",
+      "Product page blocks for fit, model switcher, material lens and cost per wear, plus quick view, recently viewed and a sticky add-to-bag bar.",
+      "Cart drawer with free-shipping progress, gift wrap and Complete the look.",
+      "Filtering and sorting on collection and search pages, predictive search in the header.",
+      "Moodboard, drop mode, pre-order labels and combined-listing links.",
+      "Translations for English, French, German, Italian and Spanish.",
+    ],
   },
 ];
 
 export default function UpdatesPage() {
   return (
     <article>
-      <header className="text-center">
-        <p className="text-sm font-semibold text-muted-strong">{theme.name}</p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-          Latest updates
+      <header>
+        <p className="label text-muted">{theme.name}</p>
+        <h1 className="mt-3 text-4xl font-black leading-[0.95] tracking-[-0.03em] sm:text-5xl">
+          Latest <span className="accent">updates</span>
         </h1>
-        <p className="mx-auto mt-5 max-w-prose text-left text-[15px] leading-relaxed text-muted-strong">
+        <p className="mt-5 max-w-prose text-[16px] leading-relaxed text-muted-strong">
           Every change to {theme.name}, newest first. Updating your theme in the
           Shopify admin brings you to the version at the top of this list.
         </p>
@@ -38,14 +47,14 @@ export default function UpdatesPage() {
         {releases.map((release) => (
           <li key={release.version} className="border-t border-line pt-8 first:border-0 first:pt-0">
             <div className="flex flex-wrap items-baseline gap-3">
-              <h2 className="text-2xl font-bold tabular-nums">{release.version}</h2>
+              <h2 className="text-2xl font-black tracking-tight tabular-nums">{release.version}</h2>
               <span className="text-sm text-muted">{release.date}</span>
             </div>
             <p className="mt-2 text-[15px] text-muted-strong">{release.summary}</p>
             <ul className="mt-4 space-y-2">
               {release.changes.map((change) => (
                 <li key={change} className="flex gap-3 text-[15px] leading-relaxed">
-                  <span aria-hidden="true" className="select-none text-rose">
+                  <span aria-hidden="true" className="select-none text-accent">
                     •
                   </span>
                   <span>{change}</span>

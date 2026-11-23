@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import SettingsList from "@/components/SettingsList";
 import { CustomizerPath, NextCard, PageHeader, Screenshot } from "@/components/PageShell";
-import { getSection, hasScreenshots, neighbours, sections } from "@/lib/manual";
+import { getSection, hasScreenshots, neighbours, sections, theme } from "@/lib/manual";
 import { sectionAdding, sectionPreview } from "@/lib/screenshots";
 
 export function generateStaticParams() {
@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
   if (!section) return {};
   return {
     title: section.title,
-    description: `How to add and customize the ${section.title} section in the Skinova Shopify theme.`,
+    description: `How to add and customize the ${section.title} section in the ${theme.name} Shopify theme.`,
   };
 }
 
@@ -50,7 +50,7 @@ export default async function SectionPage({ params }) {
           ["Block settings", section.blockSettingCount || "—"],
           ["Max blocks", section.maxBlocks ?? "—"],
         ].map(([label, value]) => (
-          <div key={label} className="bg-white px-4 py-3">
+          <div key={label} className="bg-paper px-4 py-3">
             <dt className="text-xs text-muted">{label}</dt>
             <dd className="mt-0.5 font-semibold tabular-nums">{value}</dd>
           </div>
@@ -59,7 +59,7 @@ export default async function SectionPage({ params }) {
 
       {section.addable ? (
         <section aria-labelledby="adding">
-          <h2 id="adding" className="mt-14 text-2xl font-bold">
+          <h2 id="adding" className="mt-14 text-2xl font-black tracking-tight">
             Adding the section
           </h2>
           <ol className="mt-4 space-y-2 text-[15px] leading-relaxed text-muted-strong">
@@ -92,12 +92,13 @@ export default async function SectionPage({ params }) {
             <Screenshot
               src={sectionAdding(section)}
               alt={`Adding the ${section.title} section in the theme editor`}
+              optional
             />
           )}
         </section>
       ) : (
         <section aria-labelledby="finding">
-          <h2 id="finding" className="mt-14 text-2xl font-bold">
+          <h2 id="finding" className="mt-14 text-2xl font-black tracking-tight">
             Setting it up
           </h2>
 
@@ -109,7 +110,7 @@ export default async function SectionPage({ params }) {
                 {section.usedIn.map((name, i) => (
                   <span key={name}>
                     {i > 0 && ", "}
-                    <code className="rounded bg-code-bg px-1.5 py-0.5 font-mono text-[13px] text-foreground">
+                    <code className="rounded bg-chip px-1.5 py-0.5 font-mono text-[13px] text-foreground">
                       {name}
                     </code>
                   </span>
@@ -184,13 +185,13 @@ export default async function SectionPage({ params }) {
       )}
 
       {section.acceptsAppBlocks && (
-        <p className="mt-6 rounded-lg bg-cream-soft px-4 py-3 text-[15px] text-muted-strong">
+        <p className="mt-6 rounded-lg bg-tint px-4 py-3 text-[15px] text-muted-strong">
           This section accepts app blocks, so you can add blocks from installed
           apps alongside the theme&apos;s own.
         </p>
       )}
 
-      <h2 className="mt-14 text-2xl font-bold">Settings</h2>
+      <h2 className="mt-14 text-2xl font-black tracking-tight">Settings</h2>
       <SettingsList
         groups={section.groups}
         emptyMessage="This section has no settings of its own — everything is configured through its blocks."
@@ -198,7 +199,7 @@ export default async function SectionPage({ params }) {
 
       {section.blocks.length > 0 && (
         <>
-          <h2 className="mt-14 text-2xl font-bold">Blocks</h2>
+          <h2 className="mt-14 text-2xl font-black tracking-tight">Blocks</h2>
           <p className="mt-3 text-[15px] leading-relaxed text-muted-strong">
             Blocks are the repeatable items inside this section. Add, reorder and
             remove them from the section&apos;s panel in the theme editor

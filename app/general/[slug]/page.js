@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import SettingsList from "@/components/SettingsList";
 import { CustomizerPath, NextCard, PageHeader, Screenshot } from "@/components/PageShell";
-import { getThemeSettingGroup, neighbours, themeSettingGroups } from "@/lib/manual";
+import { getThemeSettingGroup, neighbours, theme, themeSettingGroups } from "@/lib/manual";
 import { generalScreenshot } from "@/lib/screenshots";
 
 export function generateStaticParams() {
@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
   if (!group) return {};
   return {
     title: group.title,
-    description: `${group.title} settings for the Skinova Shopify theme.`,
+    description: `${group.title} settings for the ${theme.name} Shopify theme.`,
   };
 }
 
@@ -39,7 +39,7 @@ export default async function ThemeSettingPage({ params }) {
         alt={`The ${group.title} panel in Theme settings`}
       />
 
-      <h2 className="mt-12 text-2xl font-bold">Settings</h2>
+      <h2 className="mt-12 text-2xl font-black tracking-tight">Settings</h2>
       <SettingsList groups={group.groups} />
 
       <NextCard previous={previous} next={next} />

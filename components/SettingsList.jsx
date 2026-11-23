@@ -29,7 +29,7 @@ function Group({ group, index, headingLevel }) {
                 {group.settings.indexOf(setting) + 1}.
               </span>
               <span>
-                <code className="rounded bg-code-bg px-1.5 py-0.5 font-mono text-[13px]">
+                <code className="rounded bg-chip px-1.5 py-0.5 font-mono text-[13px]">
                   {setting.label ?? setting.id}
                 </code>{" "}
                 <span className="text-muted-strong">— {typeLabel(setting.type)}</span>

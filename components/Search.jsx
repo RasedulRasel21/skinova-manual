@@ -111,7 +111,7 @@ export default function Search() {
           aria-controls={listId}
           aria-autocomplete="list"
           aria-activedescendant={showList && results.length ? `${listId}-${active}` : undefined}
-          className="w-full rounded-full border border-line bg-white py-3 pl-11 pr-4 text-sm outline-none transition-colors placeholder:text-muted focus:border-rose"
+          className="w-full rounded-full border border-line bg-paper py-3 pl-11 pr-4 text-sm outline-none transition-colors placeholder:text-muted focus:border-accent"
         />
       </div>
 
@@ -119,7 +119,7 @@ export default function Search() {
         <ul
           id={listId}
           role="listbox"
-          className="absolute z-20 mt-2 w-full overflow-hidden rounded-xl border border-line bg-white shadow-lg"
+          className="absolute z-20 mt-2 w-full overflow-hidden rounded-xl border border-line bg-paper shadow-lg"
         >
           {results.length === 0 && (
             <li className="px-4 py-3 text-sm text-muted">
@@ -133,7 +133,7 @@ export default function Search() {
                 onClick={() => go(entry.href)}
                 onMouseEnter={() => setActive(i)}
                 className={`flex items-baseline justify-between gap-3 px-4 py-2.5 text-sm ${
-                  i === active ? "bg-cream-soft" : ""
+                  i === active ? "bg-tint" : ""
                 }`}
               >
                 <span className="font-medium">{entry.title}</span>
