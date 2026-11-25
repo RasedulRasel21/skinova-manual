@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T17:59:39.649Z",
+  "generatedAt": "2026-11-25T13:16:49.243Z",
   "theme": {
     "name": "Oblique",
     "version": "1.0.0",
@@ -8,11 +8,11 @@
     "supportUrl": "https://themestudio.store/pages/contact"
   },
   "totals": {
-    "sections": 43,
+    "sections": 42,
     "addableSections": 27,
-    "templateSections": 16,
-    "themeSettings": 32,
-    "sectionSettings": 346,
+    "templateSections": 15,
+    "themeSettings": 30,
+    "sectionSettings": 341,
     "blockSettings": 151
   },
   "themeSettings": [
@@ -193,7 +193,7 @@
               "id": "motion_level",
               "type": "select",
               "label": "Motion preset",
-              "info": "Sets every animation at once. Kinetic: long eased reveals, looping type and stretching headings. Editorial: short, quiet reveals and no loops. Still: no movement, hovers change colour only. Visitors who prefer reduced motion always get Still, and shoppers can pause motion.",
+              "info": "Sets every animation at once. Kinetic: long eased reveals, looping type and stretching headings. Editorial: short, quiet reveals and no loops. Still: no movement, hovers change color only. Visitors who prefer reduced motion always get Still, and shoppers can pause motion.",
               "default": "full",
               "unit": null,
               "options": [
@@ -292,7 +292,7 @@
               "id": "photo_treatment",
               "type": "select",
               "label": "Photo treatment",
-              "info": "Gives mixed photography one look. Colour returns on hover. Product pages and the cart always show true colour.",
+              "info": "Gives mixed photography one look. Color returns on hover. Product pages and the cart always show true color.",
               "default": "none",
               "unit": null,
               "options": [
@@ -335,7 +335,7 @@
               "id": "favicon",
               "type": "image_picker",
               "label": "Favicon image",
-              "info": "Will be scaled down to 32 × 32 px. Use a square PNG or SVG.",
+              "info": "Shown at 32 x 32px. Use a square .png or .svg image.",
               "default": null,
               "unit": null,
               "untranslated": false
@@ -416,24 +416,6 @@
               "label": "Show quick view",
               "info": "Products with options open in a quick view window from product cards. Products without options keep quick add.",
               "default": true,
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "moodboard",
-              "type": "checkbox",
-              "label": "Show save to moodboard",
-              "info": "A save button on product cards. Saved pieces stay in the shopper's browser; no account or app needed.",
-              "default": true,
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "moodboard_page",
-              "type": "page",
-              "label": "Moodboard page",
-              "info": "Create a page, assign it the page.moodboard template, and pick it here.",
-              "default": null,
               "unit": null,
               "untranslated": true
             }
@@ -942,7 +924,7 @@
                 {
                   "id": "title",
                   "type": "text",
-                  "label": "Title",
+                  "label": "Heading",
                   "info": null,
                   "default": null,
                   "unit": null,
@@ -1574,7 +1556,7 @@
               "type": "text",
               "label": "Status label on image",
               "info": null,
-              "default": "Customer care is online",
+              "default": "Replies within one working day",
               "unit": null,
               "untranslated": true
             },
@@ -1793,12 +1775,12 @@
           ]
         },
         {
-          "title": "Sign-up",
+          "title": "Signup",
           "settings": [
             {
               "id": "show_signup",
               "type": "checkbox",
-              "label": "Show email sign-up",
+              "label": "Show email signup",
               "info": "Adds the shopper to your customers with email marketing consent.",
               "default": true,
               "unit": null,
@@ -2383,7 +2365,7 @@
                 {
                   "id": "title",
                   "type": "text",
-                  "label": "Title",
+                  "label": "Heading",
                   "info": null,
                   "default": "Stretch wool",
                   "unit": null,
@@ -2579,7 +2561,7 @@
                 {
                   "id": "title",
                   "type": "text",
-                  "label": "Title",
+                  "label": "Heading",
                   "info": null,
                   "default": "Feature",
                   "unit": null,
@@ -2638,7 +2620,7 @@
         "footer group"
       ],
       "renderedInLayout": false,
-      "settingCount": 6,
+      "settingCount": 7,
       "blockSettingCount": 11,
       "groups": [
         {
@@ -2694,6 +2676,15 @@
               "type": "checkbox",
               "label": "Show Powered by Shopify",
               "info": null,
+              "default": true,
+              "unit": null,
+              "untranslated": true
+            },
+            {
+              "id": "show_follow_on_shop",
+              "type": "checkbox",
+              "label": "Show Follow on Shop",
+              "info": "Lets customers follow your store in the Shop app. Shop Pay must be turned on in your payment settings.",
               "default": true,
               "unit": null,
               "untranslated": true
@@ -2762,7 +2753,7 @@
         },
         {
           "type": "social",
-          "name": "Social links",
+          "name": "Social media",
           "groups": [
             {
               "title": null,
@@ -4652,118 +4643,6 @@
       ]
     },
     {
-      "handle": "main-moodboard",
-      "slug": "main-moodboard",
-      "title": "Moodboard",
-      "addable": false,
-      "maxBlocks": null,
-      "acceptsAppBlocks": false,
-      "usedIn": [
-        "page.moodboard"
-      ],
-      "renderedInLayout": false,
-      "settingCount": 6,
-      "blockSettingCount": 0,
-      "groups": [
-        {
-          "title": null,
-          "settings": [
-            {
-              "id": "heading",
-              "type": "inline_richtext",
-              "label": "Heading",
-              "info": "Leave empty to use the page title.",
-              "default": null,
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "empty_label",
-              "type": "text",
-              "label": "Empty board button label",
-              "info": null,
-              "default": "Browse new in",
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "empty_link",
-              "type": "url",
-              "label": "Empty board button link",
-              "info": null,
-              "default": null,
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "color_scheme",
-              "type": "color_scheme",
-              "label": "Color scheme",
-              "info": null,
-              "default": "scheme-1",
-              "unit": null,
-              "untranslated": true
-            },
-            {
-              "id": "padding_top",
-              "type": "select",
-              "label": "Top padding",
-              "info": null,
-              "default": "medium",
-              "unit": null,
-              "options": [
-                {
-                  "value": "none",
-                  "label": "None"
-                },
-                {
-                  "value": "small",
-                  "label": "Small"
-                },
-                {
-                  "value": "medium",
-                  "label": "Medium"
-                },
-                {
-                  "value": "large",
-                  "label": "Large"
-                }
-              ],
-              "untranslated": true
-            },
-            {
-              "id": "padding_bottom",
-              "type": "select",
-              "label": "Bottom padding",
-              "info": null,
-              "default": "large",
-              "unit": null,
-              "options": [
-                {
-                  "value": "none",
-                  "label": "None"
-                },
-                {
-                  "value": "small",
-                  "label": "Small"
-                },
-                {
-                  "value": "medium",
-                  "label": "Medium"
-                },
-                {
-                  "value": "large",
-                  "label": "Large"
-                }
-              ],
-              "untranslated": true
-            }
-          ]
-        }
-      ],
-      "blocks": []
-    },
-    {
       "handle": "main-product",
       "slug": "main-product",
       "title": "Product information",
@@ -5759,8 +5638,8 @@
       "slug": "model-spotlight",
       "title": "Model spotlight",
       "addable": true,
-      "maxBlocks": 4,
-      "acceptsAppBlocks": false,
+      "maxBlocks": 6,
+      "acceptsAppBlocks": true,
       "usedIn": [
         "index"
       ],
@@ -6366,7 +6245,7 @@
             {
               "id": "show_newsletter",
               "type": "checkbox",
-              "label": "Show the sign-up form",
+              "label": "Show the signup form",
               "info": "Sign-ups are saved as customers tagged newsletter and launch.",
               "default": true,
               "unit": null,
@@ -6408,7 +6287,7 @@
               "id": "strip_products",
               "type": "product_list",
               "label": "Products",
-              "info": "Shown in greyscale along the bottom. Hidden when empty.",
+              "info": "Shown in grayscale along the bottom. Hidden when empty.",
               "default": null,
               "unit": null,
               "untranslated": true
@@ -8148,7 +8027,7 @@
                 {
                   "id": "title",
                   "type": "text",
-                  "label": "Title",
+                  "label": "Heading",
                   "info": null,
                   "default": "Step",
                   "unit": null,

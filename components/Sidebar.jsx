@@ -85,6 +85,13 @@ export default function Sidebar() {
         </span>
         Latest updates
       </Link>
+      <Link
+        href="/faq"
+        aria-current={pathname === "/faq" ? "page" : undefined}
+        className="-mt-3 mb-6 flex items-center rounded-lg border border-line px-4 py-3 text-sm font-medium transition-colors hover:bg-tint"
+      >
+        Frequently asked questions
+      </Link>
 
       {nav.map((group) => (
         <Group
